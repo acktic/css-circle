@@ -1,0 +1,60 @@
+<svg fill="none" viewBox="0 0 400 400" width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+    <foreignObject width="100%" height="100%">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <style>
+.orig {
+  position: relative;
+  margin: 0 auto;
+  animation: rot_orig 1.5s infinite ease-in-out;
+  height: 50px;
+  width: 0;
+}
+
+.dot {
+	position: absolute;
+  border-radius: 50%;
+	font-size: 25px;
+}
+
+.one {
+  animation-delay: 0s;
+  border-radius: 50%;
+  color: var(--loader-color);
+}
+
+.two {
+  animation-delay: 100ms;
+  border-radius: 50%;
+  color: var(--loader-color);
+}
+
+.three {
+  animation-delay: 200ms;
+  border-radius: 50%;
+  color: var(--loader-color);
+}
+
+.four {
+  animation-delay: 300ms;
+  border-radius: 50%;
+  color: var(--loader-color);
+}
+
+              @-webkit-keyframes rot_orig {
+	from {
+		transform: rotate(0deg) translate(0, -.5em) rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg) translate(0, -.5em) rotate(-360deg);
+	}
+}
+            </style>
+            <div class='orig>
+                        <div class='dot one'></div>
+                        <div class='dot one'></div>
+                        <div class='dot one'></div>
+                        <div class='dot one'></div>
+            </div>
+        </div>
+    </foreignObject>
+</svg>
