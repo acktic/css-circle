@@ -19,25 +19,25 @@
 .one {
   animation-delay: 0s;
   border-radius: 50%;
-  color: var(--loader-color);
+  color: #000;
 }
 
 .two {
   animation-delay: 100ms;
   border-radius: 50%;
-  color: var(--loader-color);
+  color: #000;
 }
 
 .three {
   animation-delay: 200ms;
   border-radius: 50%;
-  color: var(--loader-color);
+  color: #000;
 }
 
 .four {
   animation-delay: 300ms;
   border-radius: 50%;
-  color: var(--loader-color);
+  color: #000;
 }
 
               @-webkit-keyframes rot_orig {
@@ -51,9 +51,9 @@
             </style>
             <div class='orig>
                         <div class='dot one'></div>
-                        <div class='dot one'></div>
-                        <div class='dot one'></div>
-                        <div class='dot one'></div>
+                        <div class='dot two'></div>
+                        <div class='dot three'></div>
+                        <div class='dot four'></div>
             </div>
         </div>
     </foreignObject>
