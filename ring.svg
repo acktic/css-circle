@@ -49,11 +49,11 @@
 	}
 }
             </style>
-            <div class='orig>
-                        <div class='dot one'></div>
-                        <div class='dot two'></div>
-                        <div class='dot three'></div>
-                        <div class='dot four'></div>
+            <div class='orig'>
+                        <div class='dot one'>.</div>
+                        <div class='dot two'>.</div>
+                        <div class='dot three'>.</div>
+                        <div class='dot four'>.</div>
             </div>
         </div>
     </foreignObject>
