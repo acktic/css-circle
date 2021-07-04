@@ -2,59 +2,69 @@
     <foreignObject width="100%" height="100%">
         <div xmlns="http://www.w3.org/1999/xhtml">
             <style>
-.orig {
-  position: relative;
-  margin: 0 auto;
-  animation: rot_orig 1.5s infinite ease-in-out;
-  height: 50px;
-  width: 0;
+.animation {
+  position: absolute;
+  padding-top: 100px;
+  width: 40px;
+  margin: auto;
+  display: block;
+}
+  .circle {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    opacity: 0;
+    transform: rotate(225deg);
+    animation-iteration-count: infinite;
+    animation-name: orbit;
+    animation-duration: 5s;
 }
 
-.dot {
-	position: absolute;
-  border-radius: 50%;
-	font-size: 25px;
+  .animation .circle:after {
+      content: '';
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      border-radius: 5px;
+      background: #8aasdf; /* Pick a color */
+    }
+
+    .circle:nth-child(2) {  animation-delay: 240ms; }
+    .circle:nth-child(3) {  animation-delay: 480ms; }
+    .circle:nth-child(4) {  animation-delay: 720ms; }
+    .circle:nth-child(5) {  animation-delay: 960ms; }
+
+@keyframes orbit {
+  0%   { transform:rotate(180deg); opacity: 1;
+         animation-timing-function: ease-out; }
+
+  7%   { transform:rotate(300deg);
+         animation-timing-function: linear; }
+
+  30%   { transform:rotate(410deg);
+          animation-timing-function: ease-in-out; }
+
+  39%   { transform:rotate(645deg);
+          animation-timing-function: linear; }
+
+  70%   { transform:rotate(770deg); opacity: 1;
+         animation-timing-function: ease-out; }
+
+  75%   { transform:rotate(900deg);
+         animation-timing-function: ease-out; }
+
+  76% { transform:rotate(945deg); opacity: 0; }
+  100% { transform:rotate(945deg); opacity: 0; }
 }
 
-.one {
-  animation-delay: 0s;
-  border-radius: 50%;
-  color: #000;
-}
-
-.two {
-  animation-delay: 100ms;
-  border-radius: 50%;
-  color: #000;
-}
-
-.three {
-  animation-delay: 200ms;
-  border-radius: 50%;
-  color: #000;
-}
-
-.four {
-  animation-delay: 300ms;
-  border-radius: 50%;
-  color: #000;
-}
-
-              @-webkit-keyframes rot_orig {
-	from {
-		transform: rotate(0deg) translate(0, -.5em) rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg) translate(0, -.5em) rotate(-360deg);
-	}
-}
             </style>
-            <div class='orig'>
-                        <div class='dot orig one'>.</div>
-                        <div class='dot orig two'>.</div>
-                        <div class='dot orig three'>.</div>
-                        <div class='dot orig four'>.</div>
-            </div>
+                  <div class='animation'>
+                  <div class='circle'></div>
+                  <div class='circle'></div>
+                  <div class='circle'></div>
+                  <div class='circle'></div>
+                  <div class='circle'></div>
+                </div>
         </div>
     </foreignObject>
 </svg>
