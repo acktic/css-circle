@@ -1,70 +1,69 @@
-<svg fill="none" viewBox="0 0 50 50" width="50" height="50" xmlns="http://www.w3.org/2000/svg">
-    <foreignObject width="100%" height="100%">
-        <div xmlns="http://www.w3.org/1999/xhtml">
-            <style>
-.animation {
-  position: absolute;
-  padding-top: 100px;
-  width: 40px;
-  margin: auto;
-  display: block;
-}
-  .circle {
-    position: absolute;
-    width: 38px;
-    height: 38px;
-    opacity: 1;
-    transform: rotate(225deg);
-    animation-iteration-count: infinite;
-    animation-name: orbit;
-    animation-duration: 5s;
-}
+                  <svg fill="none" viewBox="0 0 50 50" width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+                      <foreignObject width="100%" height="100%">
+                          <div xmlns="http://www.w3.org/1999/xhtml">
+                              <style>
+                  .animation {
+                    position: absolute;
+                    width: 40px;
+                    margin: auto;
+                    display: block;
+                  }
+                    .circle {
+                      position: absolute;
+                      width: 38px;
+                      height: 38px;
+                      opacity: 0;
+                      transform: rotate(225deg);
+                      animation-iteration-count: infinite;
+                      animation-name: orbit;
+                      animation-duration: 5s;
+                  }
 
-  .animation .circle:after {
-      content: '';
-      position: absolute;
-      width: 5px;
-      height: 5px;
-      border-radius: 5px;
-      background: #000000; /* Pick a color */
-    }
+                    .animation .circle:after {
+                        content: '';
+                        position: absolute;
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 5px;
+                        background: #000000; /* Pick a color */
+                      }
 
-    .circle:nth-child(2) {  animation-delay: 240ms; }
-    .circle:nth-child(3) {  animation-delay: 480ms; }
-    .circle:nth-child(4) {  animation-delay: 720ms; }
-    .circle:nth-child(5) {  animation-delay: 960ms; }
+                      .circle:nth-child(2) {  animation-delay: 240ms; }
+                      .circle:nth-child(3) {  animation-delay: 480ms; }
+                      .circle:nth-child(4) {  animation-delay: 720ms; }
+                      .circle:nth-child(5) {  animation-delay: 960ms; }
 
-@keyframes orbit {
-  0%   { transform:rotate(180deg); opacity: 1;
-         animation-timing-function: ease-out; }
+                  @keyframes orbit {
+                    0%   { transform:rotate(180deg); opacity: 1;
+                           animation-timing-function: ease-out; }
 
-  7%   { transform:rotate(300deg);
-         animation-timing-function: linear; }
+                    7%   { transform:rotate(300deg);
+                           animation-timing-function: linear; }
 
-  30%   { transform:rotate(410deg);
-          animation-timing-function: ease-in-out; }
+                    30%   { transform:rotate(410deg);
+                            animation-timing-function: ease-in-out; }
 
-  39%   { transform:rotate(645deg);
-          animation-timing-function: linear; }
+                    39%   { transform:rotate(645deg);
+                            animation-timing-function: linear; }
 
-  70%   { transform:rotate(770deg); opacity: 1;
-         animation-timing-function: ease-out; }
+                    70%   { transform:rotate(770deg); opacity: 1;
+                           animation-timing-function: ease-out; }
 
-  75%   { transform:rotate(900deg);
-         animation-timing-function: ease-out; }
+                    75%   { transform:rotate(900deg);
+                           animation-timing-function: ease-out; }
 
-  76% { transform:rotate(945deg); opacity: 0; }
-  100% { transform:rotate(945deg); opacity: 0; }
-}
+                    76% { transform:rotate(945deg); opacity: 0; }
+                    100% { transform:rotate(945deg); opacity: 0; }
+                  }
 
-            </style>
-                <div class='animation'>
-                  <div class='circle'></div>
-                  <div class='circle'></div>
-                  <div class='circle'></div>
-                  <div class='circle'></div>
-                  <div class='circle'></div>
-                </div>
-        </div>
-    </foreignObject>
-</svg>
+                              </style>
+                                  <div class='animation'>
+                                    <div class='circle'></div>
+                                    <div class='circle'></div>
+                                    <div class='circle'></div>
+                                    <div class='circle'></div>
+                                    <div class='circle'></div>
+                                  </div>
+                          </div>
+                      </foreignObject>
+                  </svg>
