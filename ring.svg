@@ -33,7 +33,7 @@
     .circle:nth-child(4) {  animation-delay: 720ms; }
     .circle:nth-child(5) {  animation-delay: 960ms; }
 
-@keyframes orbit {
+@-webkit-keyframes orbit {
   0%   { transform:rotate(180deg); opacity: 1;
          animation-timing-function: ease-out; }
 
