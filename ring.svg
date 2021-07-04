@@ -26,7 +26,7 @@
       width: 5px;
       height: 5px;
       border-radius: 5px;
-      background: var(--loader-color); /* Pick a color */
+      background: #000000; /* Pick a color */
     }
 
     .circle:nth-child(2) {  animation-delay: 240ms; }
@@ -58,7 +58,7 @@
 }
 
             </style>
-                  <div class='animation'>
+                <div class='animation'>
                   <div class='circle'></div>
                   <div class='circle'></div>
                   <div class='circle'></div>
