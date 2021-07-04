@@ -1,5 +1,5 @@
 # css-circle
 
   <div align='center'>
-    <img src='https://raw.githubusercontent.com/acktic/css-circle/07c1f7afcdd8dbf4bc63855adab3db1426d13396/ring.svg'>
+    <img src='https://raw.githubusercontent.com/acktic/css-circle/168bb01f057a36fae7ee63d8a5f572911c65ff40/ring.svg'>
   </div>
