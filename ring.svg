@@ -36,7 +36,7 @@
 
                   @keyframes orbit {
                     0%   { transform:rotate(180deg); opacity: 1;
-                           animation-timing-function: linear; }
+                           animation-timing-function: ease-out; }
 
                     7%   { transform:rotate(300deg);
                            animation-timing-function: linear; }
@@ -45,13 +45,13 @@
                             animation-timing-function: linear; }
 
                     39%   { transform:rotate(645deg);
-                            animation-timing-function: linear; }
+                            animation-timing-function: ease-in-out; }
 
                     70%   { transform:rotate(770deg); opacity: 1;
-                           animation-timing-function: linear; }
+                           animation-timing-function: ease-out; }
 
                     75%   { transform:rotate(900deg);
-                           animation-timing-function: linear; }
+                           animation-timing-function: ease-out; }
 
                     76% { transform:rotate(945deg); opacity: 0; }
                     100% { transform:rotate(945deg); opacity: 0; }
