@@ -3,13 +3,13 @@
                           <div xmlns="http://www.w3.org/1999/xhtml">
                               <style>
                   .animation {
-                    transform: rotate(45deg);
+                    transform: rotate(60deg);
                     padding: 20px;
                     position: absolute;
                     width: 40px;
                     margin: auto;
                     display: block;
-                    left: 40px;
+                    left: 20px;
                   }
                     .circle {
                       position: absolute;
