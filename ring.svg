@@ -8,6 +8,7 @@
                     position: absolute;
                     width: 40px;
                     margin: auto;
+                    transform: rotate(45deg);
                     display: block;
                   }
                     .circle {
